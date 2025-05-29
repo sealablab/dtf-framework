@@ -17,10 +17,10 @@ It is designed to be used as a dependency in other projects.
 
 ```bash
 # From PyPI
-pip install dtf-framework
+uv pip install dtf-framework
 
-# From Artifactory
-pip install dtf-framework --index-url https://your-artifactory-url/api/pypi/pypi/simple
+# From GitHub
+uv pip install git+https://github.com/sealablab/dtf-framework.git
 ```
 
 ## Quick Start
@@ -37,7 +37,7 @@ cmd = TestCmd(...)
 ### Prerequisites
 
 - Python 3.8+
-- [uv](https://github.com/astral-sh/uv) (recommended) or pip
+- [UV](https://github.com/astral-sh/uv) package manager
 
 ### Setup
 
@@ -59,7 +59,7 @@ uv pip install -e ".[dev]"
 We provide a script to create new model files with proper templates:
 
 ```bash
-./scripts/new_model.py my_model "Purpose of my model" \
+python scripts/new_model.py my_model "Purpose of my model" \
     --warning "Optional warning" \
     --description "Optional description"
 ```
@@ -77,7 +77,6 @@ dtf-framework/
 │   │   └── types.py      # Type definitions
 │   └── __init__.py
 ├── scripts/               # Development scripts
-├── tests/                # Test directory
 └── pyproject.toml        # Package configuration
 ```
 
@@ -86,12 +85,11 @@ dtf-framework/
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Run tests: `pytest`
-5. Submit a pull request
+4. Submit a pull request
 
 ## License
 
-[Your chosen license]
+MIT
 
 ---
 
