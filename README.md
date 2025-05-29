@@ -39,7 +39,7 @@ cmd = TestCmd(...)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourorg/dtf-framework.git
+git clone https://github.com/sealablab/dtf-framework.git
 cd dtf-framework
 
 # Create and activate virtual environment
