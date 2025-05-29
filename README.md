@@ -4,6 +4,10 @@
 > This README is designed to render properly on GitHub, Bitbucket, and in Obsidian vaults.
 > When viewing in Obsidian, you may want to use the "Reading View" for best results.
 
+> [!important] Development Tools
+> This is the core framework library. For development tools, scripts, and utilities,
+> check out the [DTF Tools](https://github.com/sealablab/dtf-tools) repository.
+
 ## Overview
 
 The DTF Framework is a Python package that provides core data models and utilities for the DTF system.
